@@ -1,52 +1,53 @@
 
+export const metadata = {
+  title: "Admisión y Expediente Clínico",
+  description: "Sistema integral de admisión y expediente clínico.",
+};
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-50 p-6 text-slate-900">
-      <section className="mx-auto max-w-4xl">
-        <header className="rounded-2xl bg-white p-8 shadow-sm">
-          <p className="text-sm font-semibold uppercase tracking-widest text-teal-700">
-            Clínica · Admisión
+    <html lang="es-MX">
+      <body
+        style={{
+          margin: 0,
+          padding: "32px",
+          background: "#f8fafc",
+          color: "#0f172a",
+          fontFamily: "Arial, Helvetica, sans-serif",
+        }}
+      >
+        <main style={{ maxWidth: 900, margin: "0 auto" }}>
+          <p style={{ color: "#0f766e", fontWeight: 700 }}>
+            CLÍNICA · ADMISIÓN
           </p>
 
-          <h1 className="mt-3 text-3xl font-bold">
-            Admisión y expediente clínico
-          </h1>
+          <h1>Admisión y expediente clínico</h1>
 
-          <p className="mt-3 text-slate-600">
-            Bienvenido. Desde este sistema podrás completar tu información
-            de admisión para preparar tu atención en la clínica.
+          <p>
+            Bienvenido. Este sistema permitirá completar la admisión
+            y organizar la información necesaria para tu atención.
           </p>
-        </header>
 
-        <section className="mt-6 grid gap-4 sm:grid-cols-2">
-          <article className="rounded-2xl border border-slate-200 bg-white p-6">
-            <h2 className="text-xl font-semibold">Admisión de pacientes</h2>
-            <p className="mt-2 text-sm text-slate-600">
-              Formulario de identificación, antecedentes y necesidades
-              de atención.
-            </p>
-            <p className="mt-4 text-sm text-amber-700">
-              Próximamente
-            </p>
-          </article>
+          <section
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+              gap: 16,
+              marginTop: 32,
+            }}
+          >
+            <article style={{ background: "white", padding: 24, borderRadius: 16 }}>
+              <h2>Admisión de pacientes</h2>
+              <p>Registro de datos y antecedentes clínicos.</p>
+            </article>
 
-          <article className="rounded-2xl border border-slate-200 bg-white p-6">
-            <h2 className="text-xl font-semibold">Centro de Control</h2>
-            <p className="mt-2 text-sm text-slate-600">
-              Área del personal para gestionar admisiones y expedientes
-              autorizados.
-            </p>
-            <p className="mt-4 text-sm text-amber-700">
-              Próximamente
-            </p>
-          </article>
-        </section>
-
-        <footer className="mt-8 text-center text-sm text-slate-500">
-          La información clínica estará disponible únicamente mediante
-          acceso autorizado.
-        </footer>
-      </section>
-    </main>
+            <article style={{ background: "white", padding: 24, borderRadius: 16 }}>
+              <h2>Centro de Control</h2>
+              <p>Gestión de admisiones para personal autorizado.</p>
+            </article>
+          </section>
+        </main>
+      </body>
+    </html>
   );
 }
